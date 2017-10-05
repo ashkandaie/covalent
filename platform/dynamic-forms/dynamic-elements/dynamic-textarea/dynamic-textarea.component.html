@@ -1,0 +1,12 @@
+<div class="dynamic-textarea-wrapper" layout="row">
+  <mat-form-field flex>
+    <textarea #elementInput
+            matInput
+            [(ngModel)]="value"
+            [placeholder]="label"
+            [required]="required"
+            rows="4"
+            flex>
+    </textarea>
+  </mat-form-field>
+</div>

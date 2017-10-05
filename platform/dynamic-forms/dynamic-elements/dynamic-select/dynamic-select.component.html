@@ -1,0 +1,8 @@
+<div class="dynamic-select-wrapper" layout="row">
+  <mat-select [(ngModel)]="value"
+             [placeholder]="label"
+             [required]="required"
+             flex="100">
+    <mat-option *ngFor="let selection of selections" [value]="selection.value || selection">{{selection.label || selection}}</mat-option>
+  </mat-select>
+</div>
